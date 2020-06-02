@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/site.css">
-    <title>{{ site.title }}</title>
+    <title>Portfolio</title>
 </head>
 <body>
 
     <div class="site">
         <!--<div class="site-branding">
-            <h1>{{site.title}}</h1>
+            <h1>Portfolio</h1>
         </div>-->
         <header class="site-header">
             
@@ -27,11 +27,25 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <!--<ul class="nav-links">
-                    {% for page in site.pages %}
-                    {% if page.title %}
-                    <li><a href="{{ page.url }}">{{ page. title }}</a></li>
-                    {% endif %}
-                    {% endfor %}
+                    
+                    
+                    
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                    
+                    
+                    <li><a href="/contact/">Contact</a></li>
+                    
+                    
+                    
+                    <li><a href="/home/">Home</a></li>
+                    
+                    
+                    
+                    
+                    
+                    
                 </ul>-->
             </nav>
         </header>
@@ -39,7 +53,47 @@
         <main class="site-main">
             
         
-            {{ content }}
+                <div id="about" class="container2">
+        <div class="card">
+            <div class="imgBx" data-text="education">
+                <img src="../images/education.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>education</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam error reprehenderit rerum reiciendis, tenetur nisi eos sit unde.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="education">
+                <img src="../images/writing.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>education</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam error reprehenderit rerum reiciendis, tenetur nisi eos sit unde.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx" data-text="education">
+                <img src="../images/interface.png">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>education</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam error reprehenderit rerum reiciendis, tenetur nisi eos sit unde.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
         </main>
 
         <footer id="contact" class="site-footer">
@@ -81,7 +135,7 @@
                     </div>
                 </div>
             </div>  
-             <p>{{site.title}} &copy ALL rights reserved; </p>
+             <p>Portfolio &copy ALL rights reserved; </p>
               
         </footer>
     </div>
