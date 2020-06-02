@@ -156,6 +156,12 @@ h2 span:nth-child(1) {
   h2 span {
     font-size: .3em; } }
 
+@media screen and (max-width: 425px) {
+  .container-main::before {
+    position: absolute;
+    width: 130%;
+    height: 100%; } }
+
 @media screen and (max-width: 320px) {
   h1 {
     font-size: 2.7em;
@@ -663,11 +669,13 @@ nav {
 
 @media screen and (max-width: 425px) {
   .nav {
-    width: 27.8em; } }
-
-@media screen and (max-width: 320px) {
+    width: 29.47em; }
+  .container-main {
+    width: 100%; }
   .nav-links.open {
-    height: 140vh; } }
+    height: 140vh; }
+  .nav-links li:nth-child(3) {
+    padding-bottom: 7em; } }
 
 /* DESKTOP */
 @media all and (max-width: 999999999px) and (min-width: 1340px) {
@@ -796,7 +804,9 @@ nav {
   .google {
     transition: 1s;
     position: relative;
-    bottom: 0px; }
+    bottom: 0px;
+    width: 3em;
+    height: 3em; }
   /* Hover Effects */
   .fb:hover {
     border-color: rgba(16, 16, 146, 0.57);
@@ -1028,8 +1038,7 @@ nav {
     margin-top: 2em;
     font-size: 1.3em; }
   .section {
-    margin-left: 2em;
-    text-align: center; }
+    margin-left: 4em; }
   .site-footer p {
     padding-top: 20em;
     text-align: center;

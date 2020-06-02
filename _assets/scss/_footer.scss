@@ -147,7 +147,7 @@
     }
       
       
-        
+       
         
         
     .section img {
@@ -212,6 +212,8 @@
       transition: 1s;
       position: relative;
       bottom:0px;
+      width: 3em;
+      height: 3em;
     }
 
     /* Hover Effects */
@@ -595,8 +597,7 @@
   
   
   .section {
-    margin-left: 2em;
-    text-align: center;
+    margin-left: 4em;
   }
   .site-footer p {
     padding-top: 20em;

@@ -126,11 +126,29 @@ nav {
 
 @media screen and ( max-width: 425px){
     .nav {
-        width: 27.8em;
+        width: 29.47em;
+    }
+    .nav-links {
+        //height: 130vh;
+        //width: 100%;
+        //height: 100%;
+    }
+    .container-main {
+        width: 100%;
+        //height: 160vh;
+    }
+    .nav-links.open{
+
+        height: 140vh;
+        
+    }
+    .nav-links li:nth-child(3){
+        padding-bottom: 7em;
+      
     }
 }
 @media screen and ( max-width: 320px ){
     .nav-links.open{
-        height: 140vh;
+        //height: 140vh;
     }
 }
