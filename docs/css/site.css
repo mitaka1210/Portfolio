@@ -20,7 +20,7 @@ html {
 .container-main::before {
   content: '';
   position: absolute;
-  top: 6.3em;
+  top: 1.3em;
   left: 0;
   width: 100%;
   height: 100%;
