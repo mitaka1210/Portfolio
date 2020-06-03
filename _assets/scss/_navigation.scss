@@ -102,6 +102,7 @@ nav {
 @media screen and ( max-width: 500px ){
     nav{
         width: 30.2em;
+        z-index: 9999;
     }
     h1 {
         display: flex;
@@ -118,6 +119,9 @@ nav {
         top: -2em;
         /* font-size: 2em; */
         font-size: 144px;
+    }
+    .hamburger{
+        z-index: 99999;
     }
     video {
         height:31em;

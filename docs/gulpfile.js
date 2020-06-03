@@ -21,12 +21,12 @@ gulp.task("sass", function() {
 	;
 });
 
-// Jekyll
+// Jekyll Ако искам да го кача в GITHUB PAGES пускам тази команда.но тази команда се извиква в gulp deploy и тя прави всичко
 gulp.task("jekyll-dev", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build --baseurl ''"], { stdio: "inherit", shell: true });
 });
 
-// Jekyll
+// Jekyll Като го разработвам пускам тази команда 
 gulp.task("jekyll", function() {
 	return cp.spawn("bundle", ["exec", "jekyll", "build"], { stdio: "inherit", shell: true });
 });
@@ -39,7 +39,7 @@ gulp.task("watch", function() {
 		}
 	});
 
-	gulp.watch( '_scss/**/*.scss', gulp.series('sass') );
+	gulp.watch( '_assets/scss/**/*.scss', gulp.series('sass') );
 
 	gulp.watch(
 		[
