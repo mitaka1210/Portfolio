@@ -155,7 +155,13 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
     
     .container2{
         z-index: 0;
-        width: 95%;
+        width: 72%;
+        margin: 41px;
+    }
+
+    .container2 .card .imgBx img {
+        width: 13em;
+        height: auto;
     }
     /*.container2 .card {
         right: 10em;
