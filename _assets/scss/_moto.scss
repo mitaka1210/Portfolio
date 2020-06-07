@@ -1,0 +1,183 @@
+
+.box-about {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.moto-text {
+    background-color: aquamarine;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.moto {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+    width: 30%;
+}
+.moto h4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    /*text-align: center;*/
+    
+    
+}
+
+.moto p {
+    line-height: 27px;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 1em;
+    /*text-align: left;*/
+   
+    border-top: 3px solid #645;
+}
+b {
+    font-size: 1.6em;
+    color: red;
+}
+.forMe {
+    padding: 38px;
+}
+.forMe h5 {
+    font-size: 2em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 24px;
+}
+
+.card-about img {
+    width: 200px;
+    height: auto;
+}
+.card-about {
+    height: 290px;
+    background-color: aqua;
+    max-width: 350px;
+    margin: 0 20px;
+    transition: .4s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+.card-about:hover {
+    height: 470px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+.card-about .img {
+    height: 200px;
+    width: 100%;
+}
+.card-about .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card-about .top-text {
+    padding: 5px;
+}
+.top-text h6 {
+    font-size: 1.2em;
+}
+.card-about .top-text .name  {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+.card-about .top-text p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card-about .bottom-text {
+    padding: 0 20px 10px 20px;
+    margin-top: 5px;
+    background-color: wheat;
+    opacity: 0;
+    visibility: hidden;
+    transition: .1s;    
+}
+
+.card-about:hover .bottom-text{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .bottom-text .text-about {
+    text-align: initial;
+}
+.card-about .bottom-text .btn {
+    margin: 10px 0;
+    text-align: left;
+}
+.card-about .bottom-text .btn a {
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: wheat;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-flex;
+    transition: .2s;
+}
+.card-about .bottom-text .btn a:hover{
+    transform: scale(.9);
+}
+
+
+@media screen and ( max-width: 978px ){
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .card-about {
+        width: 26em;
+        padding: 8px;
+        margin: 20px 0;
+    }
+}
+
+
+@media screen and ( max-width: 500px){
+    .box-about{
+        padding-top: 0em;
+    }
+    .moto {
+        width: 70%;
+    }
+    .moto h4 {
+        font-size: 1em;
+    }
+    .moto p {
+        width: 19em;
+    }
+    .forMe h5 {
+        font-size: 2em;
+    }
+    .forMe h5:before {
+        width: 0em;
+        
+    }
+    .top-text h6 {
+        font-size: 2em;
+    }
+    .card-about .top-text p {
+        font-size: 2em;
+        padding-top: .5em;
+    }
+}
