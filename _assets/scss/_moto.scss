@@ -152,6 +152,14 @@ b {
     }
 }
 
+@media screen and ( max-width: 768px ){
+    .box-about {
+        padding-top: 0em;
+    }
+    .moto {
+        width: 80%;
+    }
+}
 
 @media screen and ( max-width: 500px){
     .box-about{
@@ -179,5 +187,17 @@ b {
     .card-about .top-text p {
         font-size: 2em;
         padding-top: .5em;
+    }
+}
+
+@media screen and ( max-width: 320px ){
+    .moto p {
+        width: 12em;
+        font-size: 1.8em;
+        line-height: 38px;
+    }
+
+    .moto h4 {
+        font-size: 1.6em;
     }
 }

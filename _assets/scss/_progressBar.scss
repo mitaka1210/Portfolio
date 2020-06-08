@@ -155,7 +155,20 @@ svg circle:nth-child(2) {
     /*!  Ако искам линията която запълша кръга да отговаря на процентитие*/
     stroke: #00ff07;
 }
-
+@media screen and ( max-width: 768px ){
+    .progress {
+        width: 131%;
+    }
+    .container-progress {
+        width: 874px;
+        padding-left: .5em;
+        margin-left: 15em;
+        flex-direction: column;
+    }
+    .text {
+        top: 0em;
+    }
+}
 @media screen and ( max-width: 600px) {
     body {
         display: flex;
@@ -169,6 +182,13 @@ svg circle:nth-child(2) {
 }
 
 @media screen and ( max-width: 500px){
+    .progress{
+        
+        width: 100%;
+    }
+    .container-progress {
+        margin-left: 1em;
+    }
     .text{
         margin-top: 66px;
     }

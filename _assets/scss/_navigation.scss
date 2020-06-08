@@ -54,14 +54,18 @@ nav {
         position: fixed;
         cursor: pointer;
         right: 7%;
+        background-color: red;
         /*top: 6%;*/
+        
+        margin-top: .5em;
         transform: translate(-5% -50%);
-        z-index: 2;
+        z-index: 99999;
     }
+    
     .nav-links {
         position: fixed;
         background-color: #00a8ff;
-        height: 100vh;
+        //height: 110vh;
         width: 100%;
         flex-direction: column;
         clip-path: circle(100px at 90% -10%);
@@ -71,9 +75,11 @@ nav {
         z-index: 1;
     }
     .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(1000px at 90% -7%);
         -webkit-clip-path: circle(1000px at 90% -10%);
+        height: 110vh;
         pointer-events: all;
+        //height: 131vh;
         z-index: 1;
     }
     .landing {
@@ -143,7 +149,7 @@ nav {
     }
     .nav-links.open{
 
-        height: 140vh;
+        height: 150vh;
         
     }
     .nav-links li:nth-child(3){
@@ -152,7 +158,16 @@ nav {
     }
 }
 @media screen and ( max-width: 320px ){
-    .nav-links.open{
-        //height: 140vh;
+    .nav{
+        width: 20.2em;
+    }
+    .hamburger {
+        //width: 12em;
+        top: .2em;
+        background-color: red;
+    }
+    .nav-links{
+        height: 110vh;
+        width: 100%;
     }
 }

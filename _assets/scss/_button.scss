@@ -90,8 +90,14 @@
     transition: 1s;
     transition-delay: .75s;
 }
+@media screen  and ( max-width: 768px ){
+    .btn{
+        margin-left: 10em;
+    }
+}
  @media screen and ( max-width: 500px){
-        .btn-1{
-            /*z-index: -1;*/
-        }
+    .me {
+     
+        margin-right: 10em;
+    }
  }

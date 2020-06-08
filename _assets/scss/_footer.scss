@@ -278,9 +278,9 @@
     /* When screen resolution less than 962px */
     
 @media (max-width:962px) {
-    .section {
-        margin:250px 0px 0px 200px;
-    }
+    //.section {
+    //    margin:250px 0px 0px 200px;
+    //}
     .site-footer p {
       padding-top: 3em;
       text-align: center;
@@ -290,9 +290,9 @@
 /* When screen resolution less than 662px */
 
 @media (max-width:662px) {
-    .section {
-        margin:250px 0px 0px 80px;
-    }
+    //.section {
+    //    margin:250px 0px 0px 80px;
+    //}
 
     img {
       border:2px solid rgba(158, 158, 158, 0.4);
@@ -316,9 +316,9 @@
 /* When screen resolution less than 362px */
 
   @media (max-width:362px) {
-  .section {
-    margin:250px 0px 0px 30px;
-  }
+  //.section {
+  //  margin:250px 0px 0px 30px;
+  //}
 
   img {
   border:2px solid rgba(158, 158, 158, 0.4);
@@ -345,7 +345,8 @@
   
   #footer {
     
-    width:100%;
+    width: 131%;
+
     background-color:#fff;
     margin: 0 auto;
   
@@ -378,12 +379,14 @@
   
   /* List Styling */
   
-    ul {
+    .help ul {
       margin: 0;
+      padding-left: 3em;
+      position: absolute;
       list-style-type: none;
   }
   
-      li {
+  .help li {
       margin: 0;
       color: #666666;
       font-size: 13px;
@@ -402,9 +405,10 @@
     width: 90%;
     height: 150px;
     background-color:#fff;
-    margin: 40px auto 0 auto;
+    //margin-top: -14em;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
    
       
@@ -416,20 +420,27 @@
   
   .help {
    
-    width: 25%;
-    height: 100px;
-    float: left;
-    margin: 0;
+    width: 100%;
+    height: 1000px;
+    padding-bottom: 3em;
+    //float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
   /*display: inline-block;*/
    
+  }
+
+  .social {
+    margin-left: 22em;
   }
   
   /* Help Img Icons*/
   
   .help-img-icon {
   
-    float: left;
-    margin: 0 5px 0 0;
+    //float: left;
+    //margin: 0 5px 0 0;
   
   }
   .help-img-icon img {
@@ -483,9 +494,18 @@
 
     font-weight: 500;
     }
-    
+    .my-number {
+      width: 100%;
+      
+    }
+    .my-number a  {
+      width: 60%;
+      font-size: 1.5em;
+      margin-left: 15em;
+    }
     .site-footer p {
-      padding-top: 3em;
+      padding-top: 15em;
+      margin-left: 17em;
       text-align: center;
     }
   
@@ -501,6 +521,7 @@
     
   /* Footer Parent Div Styling */
   
+  
   #footer {
     
     width:100%;
@@ -514,7 +535,7 @@
   h3.left {
   
     color: #000;
-    font-size: 16px;
+    font-size: 28px;
   
     text-align: center;
     font-weight: bold;
@@ -545,10 +566,11 @@
       li {
       margin: 0;
       color: #666666;
-      font-size: 13px;
+      font-size: 26px;
       font-weight: 300;
       
-      line-height: 22px;
+      line-height: 19px;
+      padding-bottom: .5em;
       list-style-type: none;
        text-align: center;
   }
@@ -565,6 +587,21 @@
   
       
   }
+//  @supports (-moz-appearance:none) {
+//    .section {
+//      background-color: red;
+//      margin-left: 0em;
+//    }
+
+//    .social {
+//      background-color: yellow;
+//      padding-top: 5em;
+//      width: 31em;
+//      display: flex;
+//  }
+   
+   
+//}
   .mailBG {
     padding-bottom: 2em;
   }
@@ -600,10 +637,15 @@
   
   
   .section {
-    margin-left: 4em;
+   margin-top: 14em;
+  }
+
+  .social {
+    
+    padding-top: 5em;
   }
   .site-footer p {
-    padding-top: 20em;
+    padding-top: 24em;
     text-align: center;
     padding-bottom: 1em;
   }
@@ -658,7 +700,7 @@
     .section img {
       border:2px solid rgba(158, 158, 158, 0.4);
       border-radius: 50px;
-      padding: 25px;
+      padding: 30px;
     }
     
     h5 {

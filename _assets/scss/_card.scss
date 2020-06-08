@@ -184,8 +184,14 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
 }
 
 @media screen and ( max-width: 320px) {
+    .nav-links {
+        
+    }
+
     .container2{
-        width: 92%;
+    //   background-color: red;
+       width: 100%;
+        margin: 0px;
     }
     .container2 .card {
         max-width: 300px;
@@ -193,11 +199,12 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
         height: auto;
     }
     .container2 .card .imgBx {
+        
         position: relative;
     }
     .container2 .card .imgBx,
     .container2 .card:hover .imgBx {
-        width: 280px;
+        width: 319px;
         height: 204px;
         
     }
@@ -205,14 +212,18 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
         top: calc(50% - 75px);
         transition: .5s ease-in-out;
         background-color: #3498db;
-        left: -15em;
+        left: -21em;
     }
     .container2 .card .imgBx img,
     .container2 .card:hover .imgBx img {
         max-width: 100px;
     }
-    .container2 .card.content {
+    .container2 .card .content {
         position: relative;
         width: 100%;
+        top: -10em;
+        left: 0em;
     }
+
+    
 }
