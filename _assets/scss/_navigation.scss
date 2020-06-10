@@ -54,7 +54,7 @@ nav {
         position: fixed;
         cursor: pointer;
         right: 7%;
-        background-color: red;
+        background-color: greenyellow;
         /*top: 6%;*/
         
         margin-top: .5em;
@@ -62,24 +62,47 @@ nav {
         z-index: 99999;
     }
     
+    @mixin chrome-styles {
+        @media screen and (-webkit-min-device-pixel-ratio:0)
+          and (min-resolution:.001dpcm) {
+            @content;
+        }
+      }
+    @include chrome-styles {
+        .nav-links {
+            clip-path: circle(1500px at 90% 50%);
+            -webkit-clip-path: circle(100px at 90% -20%);
+         
+            //height: 13vh;
+            //width: 100%;
+            //height: 100%;
+        }
+        .nav-links.open {
+            background-color: green;
+            clip-path: circle(100px at 90% -7%);
+            -webkit-clip-path: circle(1500px at 90% -20%);
+            height: 118vh;
+            width: 100%;
+      }
+    }
     .nav-links {
         position: fixed;
         background-color: #00a8ff;
         //height: 110vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path: circle(100px at 90% -10%);
+        //clip-path: circle(100px at 90% -10%);
+        //-webkit-clip-path: circle(100px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
         z-index: 1;
     }
     .nav-links.open {
-        clip-path: circle(1000px at 90% -7%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        height: 110vh;
+      
+    
+       
         pointer-events: all;
-        //height: 131vh;
+    
         z-index: 1;
     }
     .landing {
@@ -100,6 +123,7 @@ nav {
     }
     .nav-links li:nth-child(3) {
         transition: all .5s ease .6s;
+        padding-bottom: 10em;
     }
     li.fade {
         opacity: 5;
@@ -127,6 +151,7 @@ nav {
         font-size: 144px;
     }
     .hamburger{
+       
         z-index: 99999;
     }
     video {
@@ -135,26 +160,55 @@ nav {
 }
 
 @media screen and ( max-width: 425px){
-    .nav {
-        width: 29.47em;
+    .site-header {
+        background-color: #00a8ff;
+        width: 100.1%;
     }
-    .nav-links {
-        //height: 130vh;
-        //width: 100%;
-        //height: 100%;
+    nav {
+        width: 48em;
     }
-    .container-main {
-        width: 100%;
-        //height: 160vh;
+    @supports (-moz-appearance:none) {
+        .nav-links{
+            //clip-path: circle(1000px at 90% -7%);
+            //-webkit-clip-path: circle(100px at 90% -7%);
+        }
+       
     }
-    .nav-links.open{
-
-        height: 150vh;
+    @mixin chrome-styles {
+        @media screen and (-webkit-min-device-pixel-ratio:0)
+          and (min-resolution:.001dpcm) {
+            @content;
+        }
+      }
+    @include chrome-styles {
+        .nav-links {
+            clip-path: circle(1000px at 90% -7%);
+            -webkit-clip-path: circle(153px at 90% -10%);
+            height: 130vh;
+            //width: 100%;
+            //height: 100%;
+        }
+        .nav-links.open{
+            
+            clip-path: circle(2000px at 90% -7%);
+            -webkit-clip-path: circle(2003px at 98% 20%);
+            height: 259vh;
+            //width: 100%;
+            background-color: green;
+        }
+      }
+    
+    
+  
+    .line {
+        width: 40px;
+        height: 6px;
+        background-color: white;
+        margin: 5px;
+    }
+    .hamburger {
         
-    }
-    .nav-links li:nth-child(3){
-        padding-bottom: 7em;
-      
+       margin-top: .5em;
     }
 }
 @media screen and ( max-width: 320px ){

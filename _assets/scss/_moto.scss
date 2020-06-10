@@ -3,13 +3,14 @@
     height: 100%;
     display: grid;
     place-items: center;
-    background-color: white;
+   
+   
     text-align: center;
     padding-top: 2em;
 }
 
 .moto-text {
-    background-color: aquamarine;
+    background-image: linear-gradient(to right top, #4288f2, #00acff, #00c8f1, #00dba5, #11e536);
     padding: 2em;
     display: flex;
     flex-direction: column;
@@ -21,6 +22,10 @@
     flex-direction: column;
     padding-bottom: 3em;
     width: 30%;
+}
+.moto-2 p{
+    background-image: linear-gradient(to right top, #e1154a, #e9570a, #d38e00, #9fbd00, #11e536);
+    
 }
 .moto h4 {
     display: flex;
@@ -44,7 +49,7 @@
 }
 b {
     font-size: 1.6em;
-    color: red;
+    color: black;
 }
 .forMe {
     padding: 38px;
@@ -57,19 +62,23 @@ b {
     justify-content: space-between;
     align-items: center;
     padding: 35px 24px;
+    background-image: linear-gradient(to right top, #1600f8, #0053ff, #0078ff, #0097ff, #00b1fa, #00c1f8, #11d0f3, #4addec, #00e7e3, #00f0ce, #12f7af, #5ffb88);
 }
-
+//.bgr-container {
+//    width: 5em;
+//}
 .card-about img {
     width: 200px;
     height: auto;
 }
 .card-about {
     height: 290px;
-    background-color: aqua;
+    //background-color: aqua;
     max-width: 350px;
     margin: 0 20px;
+    text-align: center;
     transition: .4s;
-    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 5px 12px 34px rgba(0, 0, 0, 1);
 }
 .card-about:hover {
     height: 470px;
@@ -153,12 +162,71 @@ b {
 }
 
 @media screen and ( max-width: 768px ){
+   .bgr-container-card{
+    
+    //   margin-left: 2em;
+    background-image: none;
+    width: 159.8%;
+   }
+  
     .box-about {
+        height: 100%;
+        display: grid;
+        place-items: center;
+        background-image: none;
+       
         padding-top: 0em;
+        
+     
     }
     .moto {
+       
         width: 80%;
+        text-align: center;
+        padding-left: 10em;
     }
+    .motto-git {
+      
+        margin-left: 12em;
+
+    }
+    
+    .motto-git img  {
+        
+        width: 18em;
+        height: 5em;
+     
+        
+    }
+    .moto-text{
+       width: 150.7%;
+      
+    }
+    .moto-2{
+        
+        padding-left: 3em;
+        margin-left: 9em;
+       
+    }
+
+    .forMe {
+        background-image: linear-gradient(to right bottom, #ffa600, #ff6533, #ff006a, #f600ab, #8d12eb);
+       width: 148.7%;
+        
+    }
+    .container {
+        padding-left: 10em;
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        margin-left: 4em;
+      
+       
+    }
+    .card-about{
+        text-align: center;
+        box-shadow: 5px 12px 34px rgba(0, 0, 0, 1);
+    }
+    
+   
 }
 
 @media screen and ( max-width: 500px){
@@ -187,6 +255,15 @@ b {
     .card-about .top-text p {
         font-size: 2em;
         padding-top: .5em;
+    }
+}
+@media screen and ( max-width: 425px ){
+    .box-about  {
+        width: 100%;
+    }
+    .moto {
+        text-align: center;
+        width: 80%;
     }
 }
 

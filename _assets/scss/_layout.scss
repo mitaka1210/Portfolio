@@ -1,10 +1,10 @@
 
-.site-branding h1 {
-    top: 11%;
-    right: 37em;
-    font-size: .9em;
+//.site-branding h1 {
+//    top: 11%;
+//    right: 37em;
+//    font-size: .9em;
 
-}
+//}
 
 .container-main{
     width: 100%;
@@ -40,8 +40,8 @@
 //}
 @supports (-moz-appearance:none) {
     .container-main::before{
-        background: red;
-       
+        background: linear-gradient(to right, #f00, #f00, #0f0); 
+    //   width: 2em;
     }
    
    
@@ -204,10 +204,18 @@ h2 span:nth-child(1){
 @media screen and ( max-width: 425px){
     .container-main::before{
         position: absolute;
-        width: 130%;
+        width: 224%;
         height: 100%;
     }
+    video {
+        width: 100.1%;
+    }
+    .container-main{
+        width: 105.2%;
+    }
 }
+    
+
 
 
 @media screen and ( max-width: 320px){
