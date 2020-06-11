@@ -312,6 +312,43 @@
       text-align: center;
     }
 }
+@media screen and ( max-width: 500px){
+  .help {
+    width: 61%;
+  }
+  .section img {
+    border:2px solid rgba(158, 158, 158, 0.4);
+    border-radius: 50px;
+    padding: 30px;
+  }
+}
+@media screen and ( max-width: 425px ){
+  .help{
+    width: 100%;
+  }
+  .social {
+   
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+    padding-right: 0em;
+    padding-left: 2.5em;
+  }
+  .site-footer p {
+    //margin-left: 15em;
+    width: 100%;
+    padding-left: 2em;
+    margin-top: 3em;
+  }
+  .section img {
+    border:2px solid rgba(158, 158, 158, 0.4);
+    border-radius: 50px;
+    padding: 46px;
+    width: 60px;
+    height: 60px;
+  }
+  
+}
 
 /* When screen resolution less than 362px */
 
@@ -437,12 +474,7 @@
   
   /* Help Img Icons*/
   
-  .help-img-icon {
   
-    //float: left;
-    //margin: 0 5px 0 0;
-  
-  }
   .help-img-icon img {
     border-radius: 50px;
     padding: -7px;
@@ -610,10 +642,7 @@
   
   .help {
    
-    width: 100%;
-    height: 100px;
-    float: left;
-    margin: 0;
+    
   
   }
   
@@ -637,10 +666,7 @@
   
   
   .section {
-   margin-top: 14em;
-   margin-left: 4em;
-   padding-top: 1em;
-   padding-left: 7em;
+      margin-bottom: 3em;
   }
 
   .social {
@@ -648,8 +674,8 @@
     padding-top: 5em;
   }
   .site-footer p {
-    padding-top: 24em;
-    text-align: center;
+    padding-top: 29em;
+    margin-right: 21em;
     padding-bottom: 1em;
   }
   p.deals {
@@ -700,11 +726,7 @@
      
       display: flex;
     }
-    .section img {
-      border:2px solid rgba(158, 158, 158, 0.4);
-      border-radius: 50px;
-      padding: 30px;
-    }
+   
     
     h5 {
     text-align:center;

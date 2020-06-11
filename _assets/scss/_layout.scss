@@ -175,12 +175,16 @@ h2 span:nth-child(1){
 }
 
 @media screen and ( max-width: 500px){
+    html {
+       
+        overflow-x: hidden;
+    }
     .container-main{
-        width: 100%;
+        width: 64%;
        
     }
     .container-main::before{
-        width: 100%;
+        width: 64%;
         //height: 50%;
         //position: relative;
         //left: 9em;

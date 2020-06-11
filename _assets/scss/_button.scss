@@ -97,7 +97,11 @@
 }
  @media screen and ( max-width: 500px){
     .me {
-     
-        margin-right: 10em;
+        margin-right: 27em;
     }
  }
+@media screen and ( max-width: 425px ){
+    .me {
+        margin-right: 5em;
+    }
+}

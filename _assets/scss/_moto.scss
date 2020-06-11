@@ -216,7 +216,7 @@ b {
     }
     .container {
         padding-left: 10em;
-        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+       background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
         margin-left: 4em;
       
        
@@ -236,8 +236,17 @@ b {
     .moto {
         width: 70%;
     }
+    .moto-text {
+        width: 127.7%;
+    }
     .moto h4 {
         font-size: 1em;
+        margin-right: 32em;
+    }
+    .moto-2 p{
+        font-size: .6em;
+        margin-right: 15em;
+        margin-left: -39em;
     }
     .moto p {
         width: 19em;
@@ -249,8 +258,15 @@ b {
         width: 0em;
         
     }
+    .motto-git {
+        margin-left: -20em;
+    }
     .top-text h6 {
         font-size: 2em;
+    }
+    .container {
+        margin-right: 24em;
+        padding-left: 0;
     }
     .card-about .top-text p {
         font-size: 2em;
@@ -260,10 +276,46 @@ b {
 @media screen and ( max-width: 425px ){
     .box-about  {
         width: 100%;
+        //margin-left: 1em;
+    }
+    .forMe {
+        width: 101.8%;
     }
     .moto {
         text-align: center;
-        width: 80%;
+        width: 96%;
+    }
+    .moto p {
+        width: 41em;
+        margin-left: 3em;
+    }
+    .moto-text {
+        width: 101.8%;
+
+        //margin-left: 1em;
+    }
+    .container {
+        margin-right: 0em;
+        padding-left: 0;
+    }
+    .motto-git img {
+        width: 34em;
+    height: 5em;
+    margin-left: 24em;
+    }
+    .moto h4 {
+        font-size: 1em;
+        margin-right: 10em;
+    }
+    .moto-2 p {
+        font-size: 1.1em;
+        margin-right: 5em;
+         margin-left: -2em; 
+    }
+    .bgr-container-card {
+        background-image: none;
+        width: 115.8%;
+        margin-right: 0em;
     }
 }
 

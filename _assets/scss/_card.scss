@@ -133,7 +133,8 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
     .container2{
         z-index: 0;
         width: 72%;
-        margin: 41px;
+        margin: -38px;
+        padding-top: 2em;
     }
 
     .container2 .card .imgBx img {
@@ -153,7 +154,7 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
     .container2 {
     
         width: 113%;
-        margin-left: 12em;
+        margin-left: 13em;
     }
 }
 @media screen and ( max-width: 375px){
