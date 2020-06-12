@@ -197,3 +197,18 @@ svg circle:nth-child(2) {
         width: 105.2%;
     }
 }
+@media screen and ( max-width: 375px ){
+    .container-progress {
+        right: 1.5em;
+    }
+}
+@media screen and ( max-width: 360px){
+    .progress {
+        width: 101.81%;
+    }
+}
+@media screen and (max-width: 320px ){
+    .container-progress {
+        margin-left: -5em;
+    }
+}
