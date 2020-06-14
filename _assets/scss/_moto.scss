@@ -148,7 +148,17 @@ b {
     transform: scale(.9);
 }
 
-
+@media screen and ( max-width: 1314px ){
+    .moto {
+        display: flex;
+        align-items: center;
+        padding-bottom: 3em;
+        width: 50%;
+    }
+    .motto-git img {
+        width: 24em;
+    }
+}
 @media screen and ( max-width: 978px ){
     .containerAbout {
         flex-wrap: wrap;
@@ -163,71 +173,33 @@ b {
 }
 
 @media screen and ( max-width: 768px ){
-//   .bgr-containerAbout-card{
-    
-//    //   margin-left: 2em;
-//    background-image: none;
-//    width: 159.8%;
-//   }
-  
-//    .box-about {
-//        height: 100%;
-//        display: grid;
-//        place-items: center;
-//        background-image: none;
-       
-//        padding-top: 0em;
-        
-     
-//    }
-//    .moto {
-       
-//        width: 80%;
-//        text-align: center;
-//        padding-left: 10em;
-//    }
-    //.motto-git {
-      
-    //    margin-left: 12em;
-
-    //}
-    
-    //.motto-git img  {
-        
-    //    width: 18em;
-    //    height: 5em;
-     
-        
-    //}
-    //.motto-text2{
-    //   width: 150.7%;
-      
-    //}
-    //.moto-2{
-        
-    //    padding-left: 3em;
-    //    margin-left: 9em;
-       
-    //}
-
-    //.forMe {
-    //    background-image: linear-gradient(to right bottom, #ffa600, #ff6533, #ff006a, #f600ab, #8d12eb);
-    //   width: 148.7%;
-        
-    //}
-    //.containerAbout {
-    //    padding-left: 10em;
-    //   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    //    margin-left: 4em;
-      
-       
-    //}
-    //.card-about{
-    //    text-align: center;
-    //    box-shadow: 5px 12px 34px rgba(0, 0, 0, 1);
-    //}
+    .box-about {
+        width: 131%;
+    }
+    .moto {
+        width: 90%;
+    }
+    .motto-git img {
+        width: 22em;
+    }
     
    
+}
+
+@media screen and ( max-width: 600px ){
+    .moto {
+        width: 79%;
+      }
+      .moto-2 p {
+        width: 71%;
+      }
+      
+      .ow {
+        padding-right: 9em;
+      }
+      .bgr-container-card {
+        margin-right: 11em;
+      }
 }
 
 @media screen and ( max-width: 500px){
