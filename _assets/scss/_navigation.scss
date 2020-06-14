@@ -199,7 +199,7 @@ nav {
                 clip-path: circle(2003px at 98% 20%);
                 height: 129vh;
                 //width: 100%;
-                background-color: red;
+               
             }
             
         }
@@ -301,19 +301,22 @@ nav {
 }
 
 @media screen and ( max-width: 360px ){
-
+body {
+    width: 100%;
+}
     .site-header {
         background-color: #00a8ff;
-        width: 45.1%;
+        width: 10.5%;
     }
     nav {
-       
-        width: 22.5em;
+    
+        width: 20.5em;
     }
-    .site-nav-header {
+    //.site-nav-header {
        
-        width: 225%;
-    }
+    //    width: 225%;
+    //}
+    
     .hamburger {
         right: 5%;
     }
@@ -329,7 +332,7 @@ nav {
             clip-path: circle(1000px at 90% -9%);
             -webkit-clip-path: circle(130px at 90% -10%);
             height: 130vh;
-            //width: 100%;
+            width: 100%;
             //height: 100%;
         }
         .nav-links.open{
@@ -341,6 +344,10 @@ nav {
             background-color: green;
         }
       }
+      .nav-links{
+         
+        //  right: 1em;
+      }
     .line {
         width: 35px;
         height: 3px;
@@ -348,13 +355,13 @@ nav {
 }
 @media screen and ( max-width: 320px ){
     
-    .nav{
-        width: 20.2em;
+    nav{
+        width: 22.2em;
     }
     .hamburger {
         //width: 12em;
         top: .2em;
-        background-color: red;
+      
     } @mixin chrome-styles {
         @media screen and (-webkit-min-device-pixel-ratio:0)
           and (min-resolution:.001dpcm) {

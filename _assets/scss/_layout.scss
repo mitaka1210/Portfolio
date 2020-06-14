@@ -166,12 +166,12 @@ h2 span:nth-child(1){
         /*z-index: -1;*/
     }
     .container-main{
-        width: 131%;
+        width: 100%;
        
     }
     .container-main::before{
         //position: relative;
-        width: 131%;
+        width: 100%;
     }
     
 }
@@ -182,7 +182,7 @@ h2 span:nth-child(1){
         overflow-x: hidden;
     }
     .container-main{
-        width: 64%;
+        width: 100%;
        
     }
     .container-main::before{
@@ -191,14 +191,14 @@ h2 span:nth-child(1){
         //position: relative;
         //left: 9em;
     }
-    h1{
-        top: -4.5em;
-        /*z-index: -1;*/
+    .container-main h1{
+        top: -2.5em;
+        //left: .1em;
         position: relative;
     }
-    h2 {
-        top:-3em;
-        /*z-index: -1;*/
+    .container-main h2 {
+        top: -2.6em;
+        //left: .1em;
         position: relative;
     }
     h1 span,
@@ -206,18 +206,17 @@ h2 span:nth-child(1){
         font-size: .3em;
        
     }
+    
 }
 @media screen and ( max-width: 425px){
     .container-main::before{
         position: absolute;
-        width: 224%;
+        //width: 224%;
         height: 100%;
     }
-    video {
-        width: 100.1%;
-    }
+    
     .container-main{
-        width: 105.2%;
+        width: 100%;
     }
 }
     
@@ -230,8 +229,15 @@ h2 span:nth-child(1){
     }
 }
 @media screen and ( max-width: 360px ){
+    body{
+    width: 100%;
+    
+      
+    }
     .container-main{
-        width: 99.9%;
+        
+        width: 100%;
+     
     }
     .container-main::before{
         width: 100%;
@@ -239,26 +245,22 @@ h2 span:nth-child(1){
     .container-main h1,
     .container-main h2{
         top: -4em;
-        font-size: 83px;
+        font-size: 99px;
+        //margin-left: -.1em;
     }
 }
-@media screen and ( max-width: 360px){
-    .container-main{
-        width: 101.85%;
-    }
-    .container-main::before{
-        width: 101%;
-    }
-}
+
 @media screen and ( max-width: 320px){
-    
+    .container-main {
+        width: 100%;
+    }
     .container-main h1, .container-main h2 {
         top: -4em;
         font-size: 83px;
-        left: -.3em;
+        //left: -.3em;
     }
     
     .container-main::before{
-        width: 151%;
+        width: 100%;
     }
 }

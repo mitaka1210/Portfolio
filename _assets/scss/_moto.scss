@@ -230,53 +230,21 @@ b {
    
 }
 
-//@media screen and ( max-width: 500px){
-//    .box-about{
-//        padding-top: 0em;
-//    }
-//    .moto {
-//        width: 70%;
-//    }
-//    .motto-text2 {
-//        width: 127.7%;
-//    }
-//    .moto h4 {
-//        font-size: 1em;
-//        margin-right: 32em;
-//    }
-//    .moto-2 p{
-//        font-size: .6em;
-//        margin-right: 15em;
-//        margin-left: -39em;
-//    }
-//    .moto p {
-//        width: 19em;
-//    }
-//    .forMe h5 {
-//        font-size: 2em;
-//    }
-//    .forMe h5:before {
-//        width: 0em;
-        
-//    }
-//    .motto-git {
-//        margin-left: -20em;
-//    }
-//    .top-text h6 {
-//        font-size: 2em;
-//    }
-//    .containerAbout {
-//        display: flex;
-//        justify-content: center;
-//        flex-direction: column;
-//        margin-right: 24em;
-//        padding-left: 0;
-//    }
-//    .card-about .top-text p {
-//        font-size: 2em;
-//        padding-top: .5em;
-//    }
-//}
+@media screen and ( max-width: 500px){
+    .moto {
+        display: flex;
+        align-items: center;
+        padding-bottom: 3em;
+        width: 80%;
+    }
+
+    .motto-git img {
+        border: 2px solid rgba(158,158,158,.4);
+        padding: 15px;
+        width: 21em;
+        height: 52px;
+    }
+}
 //@media screen and ( max-width: 425px ){
 //    .box-about  {
 //        width: 100%;

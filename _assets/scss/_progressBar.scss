@@ -156,8 +156,12 @@ svg circle:nth-child(2) {
     stroke: #00ff07;
 }
 @media screen and ( max-width: 768px ){
+    
+    html {
+        overflow-x: hidden;;
+    }
     .progress {
-        width: 131%;
+        width: 100%;
     }
     .container-progress {
         width: 874px;
@@ -183,7 +187,7 @@ svg circle:nth-child(2) {
 
 @media screen and ( max-width: 500px){
     .progress {
-        width: 63%;
+        width: 100%;
     }
     .container-progress {
         margin-left: 1em;
@@ -204,7 +208,7 @@ svg circle:nth-child(2) {
 }
 @media screen and ( max-width: 360px){
     .progress {
-        width: 101.81%;
+        width: 100%;
     }
 }
 @media screen and (max-width: 320px ){

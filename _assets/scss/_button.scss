@@ -91,13 +91,13 @@
     transition-delay: .75s;
 }
 @media screen  and ( max-width: 768px ){
-    .btn{
-        margin-left: 10em;
+    .btn {
+        margin-left: 0em;
     }
 }
  @media screen and ( max-width: 500px){
-    .me {
-        margin-right: 27em;
+    .btn {
+        margin-left: 0em;
     }
  }
 @media screen and ( max-width: 425px ){
@@ -106,7 +106,9 @@
     }
 }
 @media screen and ( max-width: 375px ){
-    
+    .btn {
+        margin-left: 7em;
+    }
 }
 @media screen and ( max-width: 360px){
     .me {
