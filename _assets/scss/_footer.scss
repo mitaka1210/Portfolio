@@ -427,6 +427,9 @@
     width: 100%;
 
   }
+  .section {
+    margin-left: 3em;
+  }
   .section img {
     border:2px solid rgb(8, 0, 0);
     border-radius: 50px;
@@ -436,7 +439,7 @@
   .site-footer p {
     padding-top: 23em;
     text-align: center;
-    
+    margin-left: 0em;
   }
   .help ul li {
     font-size: 17px;
@@ -504,7 +507,7 @@
     
     padding-top: 27em;
     margin-right: 4em;
-    padding-bottom: 2em;
+    //padding-bottom: 2em;
     width: 20em;
     height: 4em;
   }
@@ -533,36 +536,47 @@
     
 @media screen and ( max-width: 360px){
   .site-footer {
-    
-    
+  
+    width: 111%;
   }
   
-  
+  #footer {
+ 
+    width: 100%;
+  }
   .help {
-    width: 239%;
-    margin-left: 0em;
+    width: 100%;
   }
   .social {
 
-    width: 16.5em;
+    width: 20.5em;
     padding-top: 5em;
-    padding-left: 3.3em;
+    padding-left: 4.3em;
     display: flex;
   }
-  
+    .left {
+      margin-right: 5em;
+    }
   .section{
-    margin-left: -5em;
+    width: 100%;
+    margin-right: -7em;
+   
   }
+  
   .section img {
-    padding: 23px;
+    border:2px solid rgba(12, 0, 0, 0.308);
+    border-radius: 50px;
+    
+    padding: 30px;
     width: 30px;
     height: 31px;
   }
   .site-footer p {
     
-    padding-top: 31em;
-    margin-right: 1em;
-    padding-bottom: 2em;
+    padding-top: 22em;
+    margin-left: 8em;
+    padding-bottom: 0em;
+    //padding-bottom: 2em;
     width: 18em;
     height: 4em;
   }
@@ -757,40 +771,32 @@
   
     
   /* Footer Parent Div Styling */
-  
-  
-  #footer {
-    
-    width:100%;
 
-    margin: 0 auto;
-  
-  }
   
   /* H3 Styling */
   
-  h3.left {
+  //h3.left {
   
-    color: #000;
-    font-size: 28px;
+  //  color: #000;
+  //  font-size: 28px;
   
-    text-align: center;
-    font-weight: bold;
-    margin: 0 0 10px 0; 
+  //  text-align: center;
+  //  font-weight: bold;
+  //  margin: 0 0 10px 0; 
   
   
-  }
+  //}
   
-  h3.center {
+  //h3.center {
   
-    color: #000;
-    font-size: 16px;
+  //  color: #000;
+  //  font-size: 16px;
 
-    font-weight: bold;
-    margin: 0 0 10px 0; 
-    text-align: center;
+  //  font-weight: bold;
+  //  margin: 0 0 10px 0; 
+  //  text-align: center;
   
-  }
+  //}
     
   
   /* List Styling */
@@ -870,9 +876,6 @@
   }
   
   
-  .section {
-      margin-bottom: 3em;
-  }
 
   //.social {
   //  width: 48em;

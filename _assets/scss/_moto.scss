@@ -203,6 +203,18 @@ b {
 }
 
 @media screen and ( max-width: 500px){
+    .box-about {
+        width: 100%;
+    }
+    .ow {
+        padding-right: 2em;
+    }
+    .moto-2 p {
+        width: 89%;
+    }
+    .bgr-container-card {
+        margin-right: 0em;
+    }
     .moto {
         display: flex;
         align-items: center;
@@ -315,52 +327,48 @@ b {
     //}
 //}
 @media screen and ( max-width: 360px){
-    //.ow {
-    //    overflow-wrap: break-word;
-    //    word-wrap: break-word;
-    //    hyphens: auto;
-    //}
+   
+    body {
+        width: 100%;
+    }
     .moto {
       
-        width: 120%;
+       
         margin-left: 4em;
     }
     .box-about{
-        width: 101.2%;
+        width: 111%;
+        background-color: red;
     }
     .moto-2{
-        width: 17em;
-    margin-left: 2em;
+        width: 30em;
+    margin-left: 8em;
     }
-    .motto-text2 {
+    //.motto-text2 {
    
-        margin-right: 4em;
+    //    margin-right: 4em;
         
-    }
-    .moto h4 {
-        font-size: .8em;
-        width: 18em;
-    }
+    //}
+    //.moto h4 {
+    //    font-size: .8em;
+    //    width: 18em;
+    //}
 
-    .ow {
-        margin-left: .5em;
-    }
-    //.forMe {
-    //    width: 25.5%;
-       
+    //.ow {
+    //    margin-left: 3.5em;
+    //    padding-left: 2em;
     //}
    
+   
 
-    .motto-git img {
-        width: 14em;
-        height: 5em;
+    //.motto-git img {
+    //    width: 14em;
+    //    height: 5em;
+    //}
+    .bgr-container-card {
+        margin-right: 0em;
     }
-    
-    .card-about{
-        //margin-left: 1em;
-        //padding-left: 2em;
-    }
-    
+   
 }
 
 @media screen and ( max-width: 320px ){
