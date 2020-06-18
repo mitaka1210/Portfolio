@@ -7,6 +7,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 56px;
+    left: 7em;
 }
 
 
@@ -47,6 +48,9 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
 }
 .bgr-3 {
     background-color: rgba(169,3,41,1);
+}
+.bgr-4 {
+    background-image: linear-gradient(to right top, #e5ccda, #decae2, #d0cbea, #bcccf0, #a4cff1, #96d3f3, #87d8f2, #7adcee, #71e4f1, #69ecf3, #62f3f3, #5ffbf1);
 }
 .container2 .card:hover .imgBx {
     width: 150px;
@@ -126,7 +130,11 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
     
 }
 
-
+@media screen and ( max-width: 768px ){
+    .container2 {
+        left: 0;
+    }
+}
 
 @media screen and ( max-width: 500px ){
     
@@ -135,6 +143,7 @@ box-shadow: 9px 9px 25px 6px rgba(0,0,0,0.75);
         width: 72%;
         margin: 22px;
         padding-top: 2em;
+        left: 0;
     }
 
     .container2 .card .imgBx img {
